@@ -121,3 +121,7 @@ No additional setup is needed to run project locally.
 ### Acknowledgements
 
 - I received inspiration for this project from:
+    -  https://elfsight.com/blog/2018/06/google-maps-not-working-website/
+    -  
+    -  
+    -  https://colorlib.com/wp/jquery-map-plugins/
