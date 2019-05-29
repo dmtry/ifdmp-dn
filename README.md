@@ -10,26 +10,18 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 #User stories
 
 - As a user I want to:
-  - Select current / starting location and destination to view possible routes and travel options
-  - Find tourist attractions (with radius) /reviews, ratings, photos
+  - Find tourist attractions around me /reviews, ratings, photos
     - Nearby current location
     - At selected destination
-  - Find accommodation / Hotel / Hostel etc. (with radius) / reviews, ratings, photos
+  - Find accommodation / Hotel / Hostel etc. around me (with radius) / reviews, ratings, photos
     - Nearby current location
     - At selected destination
-  - Find bars and restaurants (with radius) / reviews, ratings, photos
+  - Find bars and restaurants (with radius) around me / reviews, ratings, photos
     - Nearby current location
     - At selected destination
-  - Find events or activities (with radius)
+  - Find events or activities (with radius) around me
     - Nearby current location
     - At selected destination
-
-  - save results? >> possible option
-     - PDS export
-     - send via email
-     - export to google maps account / device (send to)
-     
-
 
 
 

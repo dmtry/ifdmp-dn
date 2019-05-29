@@ -8,13 +8,7 @@
 }
 
 #iconAlign {
-    text-align: right;
     display: inline-block;
     font-size: 1.5em;
+    text-align: right;
 }
-
-/*
-.far {
-    color: red;
-}
-*/
