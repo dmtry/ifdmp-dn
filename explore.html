@@ -42,9 +42,9 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Around Me</a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a href="route.html" class="nav-link">Explore Map</a>
+                    <a href="explore.html" class="nav-link">Explore Map</a>
                 </li>
             </ul>
         </div>
@@ -56,74 +56,88 @@
     <!--Navigation end-->
 
     <div id="findhotels">
-      Find hotels in:
+        Find hotels in:
     </div>
 
     <div id="locationField">
-      <input id="autocomplete" placeholder="Enter a city" type="text" />
+        <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text" />
+    </div>
+    <!-- location selection-->
+    <div id="floatingPanel" class="panel">
+        <h1 class="header">Search for:</h1>
+        <select class="custom-select" onchange="search();" id="locations">
+			<option value="hotel">Hotels</option>
+			<option value="restaurant">Restaurants</option>
+			<option value="cafe">Cafés</option>
+			<option value="bar">Bars</option>
+			<option value="park">Parks</option>
+			<option value="museum">Museums</option>
+		</select>
     </div>
 
-    <div id="controls">
-      <select id="country">
-        <option value="all">All</option>
-        <option value="au">Australia</option>
-        <option value="br">Brazil</option>
-        <option value="ca">Canada</option>
-        <option value="fr">France</option>
-        <option value="de">Germany</option>
-        <option value="mx">Mexico</option>
-        <option value="nz">New Zealand</option>
-        <option value="it">Italy</option>
-        <option value="za">South Africa</option>
-        <option value="es">Spain</option>
-        <option value="pt">Portugal</option>
-        <option value="us" selected>U.S.A.</option>
-        <option value="uk">United Kingdom</option>
-      </select>
-    </div>
+    <div id="button" class="btn btn-secondary text-center" onclick="reset()">Reset</div>
 
-    <div id="map"></div>
+    <!-- location selection-->
 
-    <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div>
+
 
     <div style="display: none">
-      <div id="info-content">
-        <table>
-          <tr id="iw-url-row" class="iw_table_row">
-            <td id="iw-icon" class="iw_table_icon"></td>
-            <td id="iw-url"></td>
-          </tr>
-          <tr id="iw-address-row" class="iw_table_row">
-            <td class="iw_attribute_name">Address:</td>
-            <td id="iw-address"></td>
-          </tr>
-          <tr id="iw-phone-row" class="iw_table_row">
-            <td class="iw_attribute_name">Telephone:</td>
-            <td id="iw-phone"></td>
-          </tr>
-          <tr id="iw-rating-row" class="iw_table_row">
-            <td class="iw_attribute_name">Rating:</td>
-            <td id="iw-rating"></td>
-          </tr>
-          <tr id="iw-website-row" class="iw_table_row">
-            <td class="iw_attribute_name">Website:</td>
-            <td id="iw-website"></td>
-          </tr>
-        </table>
-      </div>
+        <div id="info-content">
+            <table>
+                <tr id="iw-url-row" class="iw_table_row">
+                    <td id="iw-icon" class="iw_table_icon"></td>
+                    <td id="iw-url"></td>
+                </tr>
+                <tr id="iw-address-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Address:</td>
+                    <td id="iw-address"></td>
+                </tr>
+                <tr id="iw-phone-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Telephone:</td>
+                    <td id="iw-phone"></td>
+                </tr>
+                <tr id="iw-rating-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Rating:</td>
+                    <td id="iw-rating"></td>
+                </tr>
+                <tr id="iw-website-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Website:</td>
+                    <td id="iw-website"></td>
+                </tr>
+
+                <tr id="iw-hours-m-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Monday:</td>
+                    <td id="iw-hours-m"></td>
+                </tr>
+
+                <tr id="iw-hours-t-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Tuesday:</td>
+                    <td id="iw-hours-t"></td>
+                </tr>
+
+
+
+            </table>
+        </div>
     </div>
 
     <!-- Content section  start -->
 
     <div class="row gmaps">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-8 col-md-8 col-sm-12">
             <div id="map"> </div>
         </div>
+
+        <div id="listing col-lg-4 col-md-4 col-sm-12">
+            <table id="resultsTable">
+                <tbody id="results"></tbody>
+            </table>
+        </div>
+
     </div>
+
+
+
 
     <!-- controls -->
 
@@ -153,8 +167,8 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe--gnTRlwqJMJ5XqvT5QNjjhMzIQFx8&callback=initMap">
     </script>
      -->
-   <!-- Places api -->
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe--gnTRlwqJMJ5XqvT5QNjjhMzIQFx8&libraries=places&callback=initMap" async defer></script>
+    <!-- Places api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe--gnTRlwqJMJ5XqvT5QNjjhMzIQFx8&libraries=places&callback=initMap" async defer></script>
 
 
 </body>
