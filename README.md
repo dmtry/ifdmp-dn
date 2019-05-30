@@ -105,15 +105,21 @@ No additional setup is needed to run project locally.
 ## Credits
 
 - [BootstrapCDN](https://www.bootstrapcdn.com/) and [BootstrapCDN](https://www.bootstrapcdn.com/fontawesome/) for fontawesome
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
+- [Geolocation: Displaying User or Device Position on Maps](https://developers.google.com/maps/documentation/javascript/geolocation)
+- [Place Autocomplete Hotel Search](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#try-it-yourself)
+- [Place Details](https://developers.google.com/places/web-service/details)
+- [Place Library](https://developers.google.com/maps/documentation/javascript/places#place_details)
+
 
 ### Content
 
 ### Media
 
+- Icon for favicon downloaded from [icons8.com](https://icons8.com/icons/set/travel) 
+
 ### Acknowledgements
 
 - I received inspiration for this project from:
     -  https://elfsight.com/blog/2018/06/google-maps-not-working-website/
-    -  
-    -  
     -  https://colorlib.com/wp/jquery-map-plugins/

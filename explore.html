@@ -55,32 +55,52 @@
 
     <!--Navigation end-->
 
-    <div id="findhotels">
-        Find hotels in:
-    </div>
+    <div class="row location">
+        <div class="col-lg-5 col-md-5 col-sm-12">
+            <div id="findlocation">
+                
+                <div id="locationField">
+                   <!-- <h1 class="header"> View locations in:</h1> -->
+                    <input class="form-control" id="autocomplete" placeholder="Enter a city:" type="text" />
+                </div>
+            </div>
+        </div>
 
-    <div id="locationField">
-        <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text" />
-    </div>
-    <!-- location selection-->
-    <div id="floatingPanel" class="panel">
-        <h1 class="header">Search for:</h1>
-        <select class="custom-select" onchange="search();" id="locations">
+        <div id="listing col-lg-5 col-md-5 col-sm-12">
+
+            <!-- location selection-->
+            <div id="floatingPanel" class="panel">
+               <!-- <h1 class="header">Look for:</h1>-->
+                <select class="custom-select" onchange="search();" id="locations">
 			<option value="hotel">Hotels</option>
 			<option value="restaurant">Restaurants</option>
 			<option value="cafe">Cafés</option>
 			<option value="bar">Bars</option>
 			<option value="park">Parks</option>
-			<option value="museum">Museums</option>
+			<option value="museum">Museums
+			    </option>
 		</select>
+            </div>
+        </div>
+        
+        <div id="listing col-lg-2 col-md-2 col-sm-12">
+
+            <div id="button" class="btn btn-secondary text-center" onclick="reset()">Reset</div>
+            
+        </div>
+
     </div>
 
-    <div id="button" class="btn btn-secondary text-center" onclick="reset()">Reset</div>
+
+
+
+
+    
 
     <!-- location selection-->
 
 
-
+    <!-- info window -->
     <div style="display: none">
         <div id="info-content">
             <table>
@@ -104,15 +124,41 @@
                     <td class="iw_attribute_name">Website:</td>
                     <td id="iw-website"></td>
                 </tr>
-
-                <tr id="iw-hours-m-row" class="iw_table_row">
-                    <td class="iw_attribute_name">Monday:</td>
-                    <td id="iw-hours-m"></td>
+                
+                
+                <tr id="iw-hours-mon-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-mon"></td>
                 </tr>
 
-                <tr id="iw-hours-t-row" class="iw_table_row">
-                    <td class="iw_attribute_name">Tuesday:</td>
-                    <td id="iw-hours-t"></td>
+                <tr id="iw-hours-tue-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-tue"></td>
+                </tr>
+
+                <tr id="iw-hours-wed-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-wed"></td>
+                </tr>
+
+                <tr id="iw-hours-thr-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-thr"></td>
+                </tr>
+
+                <tr id="iw-hours-fr-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-fr"></td>
+                </tr>
+
+                <tr id="iw-hours-sat-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-sat"></td>
+                </tr>
+
+                <tr id="iw-hours-sun-row" class="iw_table_row">
+                    <td class="iw_attribute_name"></td>
+                    <td id="iw-hours-sun"></td>
                 </tr>
 
 
@@ -120,8 +166,9 @@
             </table>
         </div>
     </div>
+    <!-- info window -->
 
-    <!-- Content section  start -->
+    <!-- map / results -->
 
     <div class="row gmaps">
         <div class="col-lg-8 col-md-8 col-sm-12">
@@ -135,18 +182,7 @@
         </div>
 
     </div>
-
-
-
-
-    <!-- controls -->
-
-    <!-- map -->
-
-
-
-    <!-- map -->
-
+    <!-- map / results -->
 
 
     <!-- footer start -->
