@@ -10,3 +10,16 @@
     font-size: 1.5em;
     text-align: right;
 }
+
+#footer {
+    height: 40px;
+    padding: 8px;
+}
+
+#f-text {
+    color: #777;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
