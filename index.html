@@ -22,7 +22,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block">
             </span>
@@ -46,50 +46,41 @@
                 </li>
             </ul>
         </div>
-    </nav>
+        </nav>
 
     <!--Navigation -->
 
     <div class="row location">
-        <div class="col-lg-5 col-md-5 col-sm-12">
-            <div id="findlocation">
-
-                <div id="locationField">
+        <div class="listing col-lg-5 col-md-5 col-sm-12 mt-2 mb-2">
+ 
+                <div id="locationField" class="ml-2 mr-2">
                     <input class="form-control" id="autocomplete" placeholder="Enter a city:" type="text" />
                 </div>
-            </div>
+
         </div>
 
-        <div id="listing col-lg-5 col-md-5 col-sm-12">
+        <div class="listing col-lg-5 col-md-5 col-sm-12 mt-2 mb-2">
 
             <!-- location selection-->
             <div id="floatingPanel" class="panel">
                 <select class="custom-select" onchange="search();" id="locations">
-			<option value="hotel">Hotels</option>
-			<option value="restaurant">Restaurants</option>
-			<option value="cafe">Cafés</option>
-			<option value="bar">Bars</option>
-			<option value="park">Parks</option>
-			<option value="museum">Museums
-			    </option>
-		</select>
+        			<option value="hotel">Hotels</option>
+        			<option value="restaurant">Restaurants</option>
+        			<option value="cafe">Cafés</option>
+        			<option value="bar">Bars</option>
+        			<option value="park">Parks</option>
+        			<option value="museum">Museums</option>
+	        	</select>
             </div>
         </div>
 
-        <div id="listing col-lg-2 col-md-2 col-sm-12">
+        <div class="listing col-lg-2 col-md-2 col-sm-12 mt-2 mb-2">
 
-            <div id="button" class="btn btn-secondary text-center" onclick="reset()">Reset</div>
+            <div class="btn btn-secondary text-center float-right mr-2" onclick="reset()">Reset</div>
 
         </div>
 
     </div>
-
-
-
-
-
-
-
     <!-- location selection-->
 
 
@@ -164,16 +155,16 @@
     <!-- map / results -->
 
     <div class="row gmaps">
-        <div class="col-lg-8 col-md-8 col-sm-12">
-            <div id="map"> </div>
+        <div class="col-lg-7 col-md-7 col-sm-12  ml-2 mr-2 mt-2 mb-2">
+            <div id="map" class="border border-light rounded"> </div>
         </div>
-
-        <div id="listing col-lg-4 col-md-4 col-sm-12">
-            <table id="resultsTable">
-                <tbody id="results"></tbody>
+        
+        <div class="col-lg-4 col-md-4 col-sm-12  ml-2 mr-2 mt-2 mb-2">
+            <h4> List of locations:</h4>
+            <table id="resultsTable" class="table table-hover">
+                <tbody id="results" class="scroll-tbody t-body"></tbody>
             </table>
         </div>
-
     </div>
     <!-- map / results -->
 
@@ -189,7 +180,7 @@
     <!-- footer end -->
 
     <!-- scripts -->
-    <script type="text/javascript" src="assets/js/explore.js"></script>
+    <script src="assets/js/explore.js"></script>
     <!-- Places api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe--gnTRlwqJMJ5XqvT5QNjjhMzIQFx8&libraries=places&callback=initMap" async defer></script>
 

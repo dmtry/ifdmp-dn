@@ -1,43 +1,23 @@
 # Interactive Frontend Development Milestone Project  
 
-This is a frontend-only website built for Interactive Frontend Development Milestone Project    **google maps api**.
+This is a frontend-only website built for Interactive Frontend Development Milestone Project - **google maps api**.
 
 ## UX
 
 - The Monkees - project [PDF](https://github.com/dmtry/ucfdmp-dn/blob/master/dev/the_monkees_project.pdf) with sketches and wieframes included in dev folder.
     - or locate manually in folder ../dev/the_monkees_project.pdf
 
-#User stories
+# User stories
 
 - As a user I want to:
-  - Find tourist attractions around me /reviews, ratings, photos
-    - Nearby current location
-    - At selected destination
-  - Find accommodation / Hotel / Hostel etc. around me (with radius) / reviews, ratings, photos
-    - Nearby current location
-    - At selected destination
-  - Find bars and restaurants (with radius) around me / reviews, ratings, photos
-    - Nearby current location
-    - At selected destination
-  - Find events or activities (with radius) around me
-    - Nearby current location
-    - At selected destination
-
-
+  - Find tourist attractions, hotels, bars and restaurants in desired city.
+  - Check nearby locations.
 
 ## Features
 
-- **News page** provides option to show news using bootstrap cards.
+- **Explore Map** Google maps page with option to entire city name with autocomplete option. After selected city is populated on map user can select desired locations from the drop down list.
 
-- **Listen page** provides option to view embeded youtube videos and listen to spotify albums. Both options redirect to reevant official pages.
-
-- **Band page** provides some description of band itself and it's members.
-
-- **Book event page** provides option to send request to book event with short description and preferred date.
-
-- **Contact page** provides option to send any question using simple form.
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+- **Around Me** Deafult google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allwoing to open navigation in native app if used on hanheld device.
 
 ## Technologies Used
 
@@ -54,7 +34,6 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to build responsive web site and utilise it's components.
-
 
 ## Testing
 
@@ -75,22 +54,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
         1. Built-in android browser, Chrome, Firefox
 
 2. All links where checked manually and using [checker tool](https://www.deadlinkchecker.com/website-dead-link-checker.asp)
-    > 100% scanned - 36/36 URLs checked, 36 OK
-
-
-3. Contact form:
-    1. /contact.html
-    2. Empty form submission highlights that Name field is required
-        1. required warning appears for any field that was left empty on time of submission - Name, email, message
-    3. Submitting form with incorrect email format will produce warning message **please include an @ in the email address**
-    4. Submitting form with all correct fields produces no error, as there is no post method implemented, page simply refreshes to empty form.
-
-4. Book event form:
-    1. /book-event.html
-    2. Empty form submission highlights that Name field is required
-        1. required warning appears for any field that was left empty on time of submission - Name, email, phonr number, message, date pick
-    3. Submitting form with incorrect email format will produce warning message **please include an @ in the email address**
-    4. Submitting form with all correct fields produces no error, as there is no post method implemented, page simply refreshes to empty form.
+    > 100% scanned - 13/13 URLs checked, 13 OK
 
 ### Bugs / Issues
 
