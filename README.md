@@ -58,13 +58,16 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ### Bugs / Issues
 
+- Geolocation might not provide accurate results on desktop browsers as location is determined via ip address and might not reflect actual user location.
+
 ## Deployment
 
-Project is deployed on [github pages](https://dmtry.github.io/ucfdmp-dn/).
+- Project is deployed on [github pages]( https://dmtry.github.io/ifdmp-dn/) and can be accessed using provided link.
 
-No additional setup is needed to run project locally.
-- Download repositary.
-- Open index.html
+- To run project locally you will need to use your own google maps [api key](https://developers.google.com/maps/documentation/embed/get-api-key):
+ - Download repositary.
+ - Update api key in script section i neach html file.
+ - Open index.html
 
 ## Credits
 
