@@ -27,9 +27,11 @@ html {
 .scroll-tbody
 {
     display: block;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .t-body{
-    height: 500px;
+    height: 550px;
+    cursor: pointer;
+    margin:auto 0px;
 }
