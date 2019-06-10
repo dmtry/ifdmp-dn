@@ -4,8 +4,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 ## UX
 
-- The Monkees - project [PDF](https://github.com/dmtry/ucfdmp-dn/blob/master/dev/the_monkees_project.pdf) with sketches and wieframes included in dev folder.
-    - or locate manually in folder ../dev/the_monkees_project.pdf
+- Wieframes included in ../assets/wireframes folder.
 
 # User stories
 
@@ -20,8 +19,6 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 - **Around Me** Deafult google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allwoing to open navigation in native app if used on hanheld device.
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [HTML](https://w3c.github.io/html/)
     - The project uses **HTML** as core language.
@@ -58,16 +55,20 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ### Bugs / Issues
 
-- Geolocation might not provide accurate results on desktop browsers as location is determined via ip address and might not reflect actual user location.
+Current bug for desktop browsers, geolocation might not show correct location as being determied via IP address which might not reflect actual user location.
 
 ## Deployment
 
-- Project is deployed on [github pages]( https://dmtry.github.io/ifdmp-dn/) and can be accessed using provided link.
+Project is deployed on [github pages](https://dmtry.github.io/ucfdmp-dn/).
 
-- To run project locally you will need to use your own google maps [api key](https://developers.google.com/maps/documentation/embed/get-api-key):
- - Download repositary.
- - Update api key in script section i neach html file.
- - Open index.html
+To run project in your own environment you will need to have your own google maps [api key](https://developers.google.com/maps/documentation/embed/get-api-key).
+- Current api access is restircted to github pages.
+- You will need to enable Maps JavaScript API and Places API in cloud console.
+
+Deployment:
+- Download repositary.
+- Edit index.html and around.html, to update script section with your api key or replace with full script tag.
+- Open index.html to run the project.
 
 ## Credits
 
@@ -77,9 +78,6 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [Place Autocomplete Hotel Search](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#try-it-yourself)
 - [Place Details](https://developers.google.com/places/web-service/details)
 - [Place Library](https://developers.google.com/maps/documentation/javascript/places#place_details)
-
-
-### Content
 
 ### Media
 
