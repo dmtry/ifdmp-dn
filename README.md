@@ -59,7 +59,7 @@ Current bug for desktop browsers, geolocation might not show correct location as
 
 ## Deployment
 
-Project is deployed on [github pages](https://dmtry.github.io/ifdmp-dn/).
+Project is deployed on [github pages](https://dmtry.github.io/ifdmp-dn/index.html).
 
 To run project in your own environment you will need to have your own google maps [api key](https://developers.google.com/maps/documentation/embed/get-api-key).
 - Current api access is restircted to github pages.
