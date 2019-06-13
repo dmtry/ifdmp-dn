@@ -15,11 +15,6 @@ html {
     text-align: right;
 }
 
-#footer {
-    height: 40px;
-    padding: 8px;
-}
-
 #f-text {
     color: #777;
 }
@@ -31,7 +26,12 @@ html {
 }
 
 .t-body{
-    height: 550px;
     cursor: pointer;
+    height: 550px;
     margin:auto 0px;
+}
+
+#footer {
+    height: 40px;
+    padding: 8px;
 }
