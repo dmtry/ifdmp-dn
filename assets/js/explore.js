@@ -155,14 +155,14 @@ function buildIWContent(place) {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
-
-  document.getElementById('iw-hours-mon').textContent = place.opening_hours.weekday_text[0];
-  document.getElementById('iw-hours-tue').textContent = place.opening_hours.weekday_text[1];
-  document.getElementById('iw-hours-wed').textContent = place.opening_hours.weekday_text[2];
-  document.getElementById('iw-hours-thr').textContent = place.opening_hours.weekday_text[3];
-  document.getElementById('iw-hours-fr').textContent = place.opening_hours.weekday_text[4];
-  document.getElementById('iw-hours-sat').textContent = place.opening_hours.weekday_text[5];
-  document.getElementById('iw-hours-sun').textContent = place.opening_hours.weekday_text[6];
+  // Disabled opening time:
+  // document.getElementById('iw-hours-mon').textContent = place.opening_hours.weekday_text[0];
+  // document.getElementById('iw-hours-tue').textContent = place.opening_hours.weekday_text[1];
+  // document.getElementById('iw-hours-wed').textContent = place.opening_hours.weekday_text[2];
+  // document.getElementById('iw-hours-thr').textContent = place.opening_hours.weekday_text[3];
+  // document.getElementById('iw-hours-fr').textContent = place.opening_hours.weekday_text[4];
+  // document.getElementById('iw-hours-sat').textContent = place.opening_hours.weekday_text[5];
+  // document.getElementById('iw-hours-sun').textContent = place.opening_hours.weekday_text[6];
 
 
   // Assign a five-star rating , using a black star ('&#10029;')
