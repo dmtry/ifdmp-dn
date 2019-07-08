@@ -1,34 +1,31 @@
 html {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
     width: 100%;
 }
 
 #map {
     height: 600px;
-    width: 100%;
+    max-width: 100%;
 
-}
-
-#iconAlign {
-    display: inline-block;
-    font-size: 1.5em;
-    text-align: right;
 }
 
 #f-text {
     color: #777;
 }
 
-.scroll-tbody
-{
-    display: block;
+
+.scroll-tbody {
+    display: inline-block;
+    height: 550px;
     overflow-y: auto;
+    width: 100%;
 }
 
-.t-body{
+
+.t-body {
     cursor: pointer;
-    height: 550px;
-    margin:auto 0px;
+    margin: auto 0px;
 }
 
 #footer {

@@ -16,7 +16,7 @@ function initMap() {
     mapTypeControl: false,
     panControl: false,
     zoomControl: true,
-    streetViewControl: true,
+    streetViewControl: false,
     fullscreenControl: true
   });
 

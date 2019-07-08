@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -16,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title> Trip Planner </title>
-
 </head>
 
 <body>
@@ -40,7 +38,6 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Explore Map</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="around.html" class="nav-link">Around Me</a>
                 </li>
@@ -49,20 +46,17 @@
     </nav>
 
     <!--Navigation -->
-
     <div class="row location">
         <div class="listing col-lg-5 col-md-5 col-sm-12 mt-2 mb-2">
 
-            <div id="locationField" class="ml-2 mr-2">
+            <div id="locationField" class="ml-1 mr-1">
                 <input class="form-control" id="autocomplete" placeholder="Enter a city:" type="text" />
             </div>
-
         </div>
-
         <div class="listing col-lg-5 col-md-5 col-sm-12 mt-2 mb-2">
 
             <!-- location selection-->
-            <div id="floatingPanel" class="panel ml-2 mr-2">
+            <div id="floatingPanel" class="panel ml-1 mr-1">
                 <select class="custom-select" onchange="search();" id="locations">
         			<option value="hotel">Hotels</option>
         			<option value="restaurant">Restaurants</option>
@@ -75,14 +69,10 @@
         </div>
 
         <div class="listing col-lg-2 col-md-2 col-sm-12 mt-2 mb-2">
-
-            <div class="btn btn-secondary text-center float-right mr-2" onclick="reset()">Reset</div>
-
+            <div class="btn btn-secondary text-center float-right mr-1" onclick="reset()">Reset</div>
         </div>
-
     </div>
     <!-- location selection-->
-
 
     <!-- info window -->
     <div style="display: none">
@@ -143,49 +133,40 @@
                     <td class="iw_attribute_name"></td>
                     <td id="iw-hours-sun"></td>
                 </tr>
-
-
-
             </table>
         </div>
     </div>
     <!-- info window -->
 
     <!-- map / results -->
-
     <div class="row gmaps">
-        <div class="col-lg-8 col-md-8 col-sm-12  ml-2 mr-2 mt-2 mb-2">
+        <div class="col-lg-8 col-md-8 col-sm-12 mt-2 mb-2 mr-1 ml-1">
             <div id="map" class="border border-light rounded"> </div>
         </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-12  ml-2 mr-2 mt-2 mb-2">
+        <div class="col-lg-3 col-md-3 col-sm-12 mt-2 mb-2 mr-1 ml-1">
+            <!--   ml-2 mr-2 mt-2 mb-2 -->
             <h4> List of locations:</h4>
-            <table id="resultsTable" class="table">
-                <tbody id="results" class="scroll-tbody t-body"></tbody>
-            </table>
+            <div class="table-responsive scroll-tbody">
+                <table id="resultsTable" class="table">
+                    <tbody id="results" class="t-body"></tbody>
+                </table>
+            </div>
         </div>
     </div>
     <!-- map / results -->
 
-
     <!-- footer start -->
-
     <footer id="footer" class="bg-light text-dark">
         <div class="text-right">
-            <p id="f-text"> 2019 Dmitrijs Novikovs @ codeinstitute.net </p>
+            <p id="f-text"> 2019 <a href="https://github.com/dmtry" target="_blank"> Dmitrijs Novikovs </a> @ <a href="https://codeinstitute.net/" target="_blank"> codeinstitute.net </a> </p>
         </div>
     </footer>
-
     <!-- footer end -->
 
     <!-- scripts -->
     <script src="assets/js/explore.js"></script>
     <!-- Places api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZe--gnTRlwqJMJ5XqvT5QNjjhMzIQFx8&libraries=places&callback=initMap" async defer></script>
-
-
 </body>
-
-
 
 </html>

@@ -4,7 +4,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 ## UX
 
-- Wieframes included in ../assets/wireframes folder.
+- Wireframes included in ../assets/wireframes folder.
 
 # User stories
 
@@ -14,9 +14,9 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 ## Features
 
-- **Explore Map** Google maps page with option to entire city name with autocomplete option. After selected city is populated on map user can select desired locations from the drop down list.
+- **Explore Map** Google maps page with option to enter city name with autocomplete option. After selected city is populated on map user can select desired locations from the drop down list.
 
-- **Around Me** Deafult google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allwoing to open navigation in native app if used on hanheld device.
+- **Around Me** Default google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allowing to open navigation in native app if used on handheld device.
 
 ## Technologies Used
 
@@ -24,13 +24,15 @@ This is a frontend-only website built for Interactive Frontend Development Miles
     - The project uses **HTML** as core language.
 
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
-    - The project uses **CSS** to describe colors, layout, and fonts.
+    - The project uses **CSS** to describe colours, layout, and fonts.
 
 - [JavaScript](https://www.javascript.com/)
-    - The project uses **JQuery** as part of **bootstrap**.
+    - The project uses **JQuery** as part of **bootstrap**, *maps api*.
 
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to build responsive web site and utilise it's components.
+- [Google Maps api](https://cloud.google.com/maps-platform/)
+    -  The project uses **maps api** to load google maps and use scripts to load information about places.
 
 ## Testing
 
@@ -40,12 +42,12 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 1. Tested on various browsers and devices:
     1. Chrome, Firefox, Edge on windows PC and Tablet;
-        1. general resiszing and using developer tools.
+        1. general resizing and using developer tools.
         2. tablet rotation
         3. screen resolution from 2560x1440 down to 1280x800
     2. Chrome, Firefox, Safari on MAC
-        1. general resiszing and using developer tools
-    3. Iphone SE, 6S Plus
+        1. general resizing and using developer tools
+    3. iPhone SE, 6S Plus
         1. Chrome, Safari
     4. Galaxy S3
         1. Built-in android browser, Chrome, Firefox
@@ -55,18 +57,18 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 ### Bugs / Issues
 
-Current bug for desktop browsers, geolocation might not show correct location as being determied via IP address which might not reflect actual user location.
+Current bug for desktop browsers, geolocation might not show correct location as being determined via IP address which might not reflect actual user location.
 
 ## Deployment
 
 Project is deployed on [github pages](https://dmtry.github.io/ifdmp-dn/index.html).
 
 To run project in your own environment you will need to have your own google maps [api key](https://developers.google.com/maps/documentation/embed/get-api-key).
-- Current api access is restircted to github pages.
+- Current api access is restricted to github pages.
 - You will need to enable Maps JavaScript API and Places API in cloud console.
 
 Deployment:
-- Download repositary.
+- Download repository.
 - Edit index.html and around.html, to update script section with your api key or replace with full script tag.
 - Open index.html to run the project.
 
