@@ -155,14 +155,51 @@ function buildIWContent(place) {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
-  // Disabled opening time:
-  // document.getElementById('iw-hours-mon').textContent = place.opening_hours.weekday_text[0];
-  // document.getElementById('iw-hours-tue').textContent = place.opening_hours.weekday_text[1];
-  // document.getElementById('iw-hours-wed').textContent = place.opening_hours.weekday_text[2];
-  // document.getElementById('iw-hours-thr').textContent = place.opening_hours.weekday_text[3];
-  // document.getElementById('iw-hours-fr').textContent = place.opening_hours.weekday_text[4];
-  // document.getElementById('iw-hours-sat').textContent = place.opening_hours.weekday_text[5];
-  // document.getElementById('iw-hours-sun').textContent = place.opening_hours.weekday_text[6];
+  // opening hours - no result if undefined
+
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-mon').textContent = place.opening_hours.weekday_text[0];
+  } else {
+    document.getElementById('iw-hours-mon').textContent = '';
+  }
+
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-tue').textContent = place.opening_hours.weekday_text[1];
+  } else {
+    document.getElementById('iw-hours-tue').textContent = '';
+  }
+    
+    
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-wed').textContent = place.opening_hours.weekday_text[2];
+  } else {
+    document.getElementById('iw-hours-wed').textContent = '';
+  }
+  
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-thr').textContent = place.opening_hours.weekday_text[3];
+  } else {
+    document.getElementById('iw-hours-thr').textContent = '';
+  }
+    
+  
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-fr').textContent = place.opening_hours.weekday_text[4];
+  } else {
+    document.getElementById('iw-hours-fr').textContent = '';
+  }
+  
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-sat').textContent = place.opening_hours.weekday_text[5];
+  } else {
+    document.getElementById('iw-hours-sat').textContent = '';
+  }
+  
+  if (place.opening_hours) {
+    document.getElementById('iw-hours-sun').textContent = place.opening_hours.weekday_text[6];
+  } else {
+    document.getElementById('iw-hours-sun').textContent = '';
+  }
 
 
   // Assign a five-star rating , using a black star ('&#10029;')
