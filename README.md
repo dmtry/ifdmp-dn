@@ -27,7 +27,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
     - The project uses **CSS** to describe colours, layout, and fonts.
 
 - [JavaScript](https://www.javascript.com/)
-    - The project uses **JQuery** as part of **bootstrap**, *maps api*.
+    - The project uses **JQuery** as part of **bootstrap**, **maps api**.
 
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to build responsive web site and utilise it's components.
