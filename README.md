@@ -16,7 +16,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 - **Explore Map** Google maps page with option to enter city name with autocomplete option. After selected city is populated on map user can select desired locations from the drop down list.
 
-- **Around Me** Default google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allowing to open navigation in native app if used on handheld device.
+- **Around Me** Default google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allowing map drag using street view and opening navigation in native app if used on handheld device.
 
 ## Technologies Used
 
@@ -53,7 +53,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
         1. Built-in android browser, Chrome, Firefox
 
 2. All links where checked manually and using [checker tool](https://www.deadlinkchecker.com/website-dead-link-checker.asp)
-    > 100% scanned - 13/13 URLs checked, 13 OK
+    > 100% scanned - 15/15 URLs checked, 15 OK
 
 ### Bugs / Issues
 
