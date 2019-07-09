@@ -16,7 +16,7 @@ This is a frontend-only website built for Interactive Frontend Development Miles
 
 - **Explore Map** Google maps page with option to enter city name with autocomplete option. After selected city is populated on map user can select desired locations from the drop down list.
 
-- **Around Me** Default google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allowing map drag using street view and opening navigation in native app if used on handheld device.
+- **Around Me** Default google maps page with option to use geolocation if users accepts. Map will show default locations on map to explore. Allowing map drag, street view and opening navigation in native app if used on handheld device.
 
 ## Technologies Used
 
@@ -83,7 +83,8 @@ Deployment:
 
 ### Media
 
-- Icon for favicon downloaded from [icons8.com](https://icons8.com/icons/set/travel) 
+- Icon for favicon downloaded from [icons8.com](https://icons8.com/icons/set/travel)
+- User flow chart created using [draw.io](https://www.draw.io)
 
 ### Acknowledgements
 
